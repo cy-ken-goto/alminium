@@ -164,7 +164,8 @@ module IssuesHelper
     s = ""
     issue.custom_field_values.compact.each do |value|
       s << "<tr>\n"
-      s << "\t<th>#{ h(value.custom_field.name) }:</th><td>#{ simple_format_without_paragraph(h(show_value(value))) }</td>\n"
+      s << "\t<th class=\"custom_field\">#{ h(value.custom_field.name) }:"
+      s << "</th><td class=\"custom_field\">#{ simple_format_without_paragraph(h(show_value(value))) }</td>\n"
       s << "</tr>\n"
     end
     s.html_safe
