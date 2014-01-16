@@ -331,6 +331,8 @@ div.issue span.private { position:relative; bottom: 2px; text-transform: upperca
 div.issue .next-prev-links {color:#999;}
 div.issue table.attributes th {width:22%;}
 div.issue table.attributes td {width:28%;}
+#custom_field_title {width:14%;}
+#custom_field_value {width:86%;}
 
 #issue_tree table.issues, #relations table.issues { border: 0; }
 #issue_tree td.checkbox, #relations td.checkbox {display:none;}
